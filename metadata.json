@@ -1,0 +1,8 @@
+{
+  "name": "THS",
+  "description": "Wedding film post-production tracker to monitor client-promised dates for pending albums, selections, video changes, and payments with automatic in-app popup reminders until updated.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

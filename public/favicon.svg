@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="thsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <!-- Background badge -->
+  <rect width="100" height="100" rx="24" fill="#09090b" />
+  <rect x="2" y="2" width="96" height="96" rx="22" fill="none" stroke="#27272a" stroke-width="2" />
+  
+  <!-- Subtle film reel perforations at top and bottom -->
+  <rect x="18" y="10" width="8" height="6" rx="1.5" fill="#f59e0b" opacity="0.4" />
+  <rect x="36" y="10" width="8" height="6" rx="1.5" fill="#f59e0b" opacity="0.4" />
+  <rect x="56" y="10" width="8" height="6" rx="1.5" fill="#f59e0b" opacity="0.4" />
+  <rect x="74" y="10" width="8" height="6" rx="1.5" fill="#f59e0b" opacity="0.4" />
+
+  <!-- THS Emblem -->
+  <text x="50" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="url(#thsGrad)" text-anchor="middle" letter-spacing="1">THS</text>
+  
+  <!-- Bottom cinema bar accent -->
+  <circle cx="50" cy="80" r="3" fill="#f59e0b" />
+</svg>
