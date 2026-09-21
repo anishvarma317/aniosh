@@ -19,16 +19,16 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Bun Environment
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: '20'
+          bun-version: latest
 
-      - name: Install Project Dependencies
-        run: npm install --legacy-peer-deps
+      - name: Install Project Dependencies via Bun
+        run: bun install
 
       - name: Compile Vite Web Assets
-        run: npx vite build
+        run: bun run build
 
       - name: Sync Capacitor Android Project
         run: npx @capacitor/cli sync android
