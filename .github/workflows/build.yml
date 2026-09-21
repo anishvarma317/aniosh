@@ -27,11 +27,19 @@ jobs:
       - name: Install Project Dependencies via Bun
         run: bun install
 
+      - name: Force Install Capacitor Core Packages
+        run: bun add @capacitor/core @capacitor/cli @capacitor/android
+
+      - name: Initialize Capacitor Configuration
+        run: npx @capacitor/cli init "aniosh" "com.myapp.test" --web-dir=dist || true
+
       - name: Compile Vite Web Assets
         run: bun run build
 
-      - name: Sync Capacitor Android Project
-        run: npx @capacitor/cli sync android
+      - name: Build and Inject Android Container
+        run: |
+          npx @capacitor/cli add android || true
+          npx @capacitor/cli sync android
 
       - name: Build Debug APK via Gradle
         run: |
